@@ -1,0 +1,16 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT"
+
+[[mods]]
+modId="cat_launcher"
+version="1.0"
+displayName="Cat launcher"
+#updateJSONURL="https://change.me.example.invalid/updates.json"
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
+#logoFile="logo.png"
+credits="Silly Silver"
+authors="Silly Silver"
+description='''
+Cat launcher like Aphmau
+'''
