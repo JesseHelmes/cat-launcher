@@ -66,3 +66,4 @@ Planned features
 Known bugs
 	- sometimes spawns the cat inside of a block instead of just outside of it, so i need to solve that time time
 	- when cat hit each other you end up with a row
+	- cat spawning slighty up

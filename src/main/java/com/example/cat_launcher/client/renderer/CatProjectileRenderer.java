@@ -35,6 +35,9 @@ public class CatProjectileRenderer <T extends CatProjectile> extends EntityRende
 		// to make it correctly position, f3 + b shows hitbox
 		matrixStack.mulPose(Axis.XP.rotationDegrees(180.0F));
 
+		// position model correctly
+		matrixStack.translate(0, -1.5, 0);
+
 		// this is to test if it goes horizontal
 //		matrixStack.mulPose(Axis.XP.rotationDegrees(entity.getXRot()));
 		VertexConsumer vertexConsumer = buffer.getBuffer(RenderType.entityCutoutNoCull(this.getTextureLocation(entity)));
