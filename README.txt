@@ -53,5 +53,16 @@ Features
 		- launchers explosive cats
 
 Planned features
+	- cat explode config to don't explode
+		- default it will explode
+	- cat spawn after explode config so it won't spawn
+		- default it will spawn
+	- make cat projectile follow a straight line longer
+	- moving young from catProjeticleRenderer to catProjeticle
+	- change model of Cat Launcher
+	- change explode power with config
+		- default 3.0
 
 Known bugs
+	- sometimes spawns the cat inside of a block instead of just outside of it, so i need to solve that time time
+	- when cat hit each other you end up with a row

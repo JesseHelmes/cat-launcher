@@ -3,7 +3,7 @@ package com.example.cat_launcher.client.renderer;
 import com.example.cat_launcher.entity.projectile.CatProjectile;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.math.Vector3f;
+import com.mojang.math.Axis;
 
 import net.minecraft.client.model.CatModel;
 import net.minecraft.client.model.geom.ModelLayers;
@@ -31,10 +31,12 @@ public class CatProjectileRenderer <T extends CatProjectile> extends EntityRende
 	public void render(T entity, float entityYaw, float partialTicks, PoseStack matrixStack, MultiBufferSource buffer, int packedLight) {
 		super.render(entity, entityYaw, partialTicks, matrixStack, buffer, packedLight);
 		matrixStack.pushPose();
-		matrixStack.mulPose(Vector3f.YP.rotationDegrees(entity.getYRot()));
-		matrixStack.mulPose(Vector3f.XP.rotationDegrees(180.0F));
+		matrixStack.mulPose(Axis.YP.rotationDegrees(entity.getYRot()));
+		// to make it correctly position, f3 + b shows hitbox
+		matrixStack.mulPose(Axis.XP.rotationDegrees(180.0F));
+
 		// this is to test if it goes horizontal
-//		matrixStack.mulPose(Vector3f.XP.rotationDegrees(entity.getXRot()));
+//		matrixStack.mulPose(Axis.XP.rotationDegrees(entity.getXRot()));
 		VertexConsumer vertexConsumer = buffer.getBuffer(RenderType.entityCutoutNoCull(this.getTextureLocation(entity)));
 		this.model.setupAnim(entity.getCat(), entityYaw, partialTicks, 0.0F, 0.0F, 0.0F);
 		this.model.renderToBuffer(matrixStack, vertexConsumer, packedLight, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 1.0F);

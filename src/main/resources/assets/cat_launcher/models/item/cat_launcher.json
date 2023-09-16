@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "cat_launcher:items/lego_crystal",
-		"2": "cat_launcher:items/lego_crystal_staff",
-		"particle": "cat_launcher:items/lego_crystal"
+		"1": "cat_launcher:item/lego_crystal",
+		"2": "cat_launcher:item/lego_crystal_staff",
+		"particle": "#1"
 	},
 	"elements": [
 		{

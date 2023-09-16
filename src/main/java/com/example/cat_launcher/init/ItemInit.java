@@ -17,5 +17,5 @@ public class ItemInit {
 
 	public static final RegistryObject<CatLauncher> CAT_LAUNCHER = ITEMS.register("cat_launcher",
 	() -> new CatLauncher(ModTiers.NETHERITE,
-			(new Item.Properties()).tab(CreativeModeTab.TAB_COMBAT).fireResistant().durability(-1).rarity(Rarity.EPIC)));
+			(new Item.Properties()).fireResistant().durability(-1).rarity(Rarity.EPIC)));
 }
